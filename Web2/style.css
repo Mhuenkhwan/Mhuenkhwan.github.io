@@ -1,0 +1,119 @@
+#css-zen-garden{
+    background-image: url("pink-flowers-large.jpg");
+}
+header{
+    text-align: center;
+    text-decoration-line: underline;
+    font-family: Comic Sans MS;
+    padding: 30px;
+    border: rgb(198, 243, 205) solid 3px;
+    background-image: linear-gradient(rgb(0, 196, 0), yellow);
+    opacity: 0.8;
+    filter: Alpha(opacity=80);
+}
+div{
+    font-family: 'Courier New', Courier, monospace;
+}
+.summary{
+    margin-top: -12%;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    background-color: yellow;
+    box-shadow: 10px 10px 5px grey;
+}
+.page{
+    background-image: linear-gradient(to right, rgb(241, 255, 111), rgba(202, 128, 16, 0.932));
+    font-weight: 200;
+    padding: 10px;
+    border: darkslategrey solid 1px;
+    width: 76%;
+    margin-left:22%;
+    text-align: center;
+}
+#mbf:hover{
+    color: rgb(165, 3, 165);
+    text-decoration-line: none;
+    background-color: rgb(233, 202, 255);
+}
+#ls:hover{
+    color: rgb(7, 2, 7);
+    text-decoration-line: none;
+    background-color: rgb(221, 173, 255);
+}
+.info{
+    margin-left: 78%;
+    width: 300px;
+    padding: 15px;
+    padding-left: 12px;
+    height: 100px;
+    background-color: rgb(204, 140, 21);
+    border: black solid 1px;
+}
+.preamble{
+    background-image: linear-gradient(to right, rgb(241, 255, 111), rgba(224, 167, 80, 0.932));
+    padding: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 50%;
+    opacity: 0.9;
+    filter: Alpha(opacity=90);
+    margin-top: -18%;
+    margin-left: 23%;
+}
+.main{
+    background-image: linear-gradient(rgb(253, 241, 135), rgb(188, 255, 182));
+    width: 77%;
+    padding-left: 10px;
+    opacity: 0.9;
+    filter: Alpha(opacity=90);
+}
+.sidebar{
+    background-image: linear-gradient(rgb(255, 238, 82), rgb(248, 255, 182));
+    width: 300px;
+    height: 800px;
+    margin-left: 78%;
+    margin-top: -77%;
+    opacity: 0.9;
+    filter: Alpha(opacity=90);
+}
+footer{
+    background-color: rgb(15, 255, 15);
+    text-align: center;
+}
+.head-content{
+    background-color: lavender;
+    text-align: center;
+    padding: 30px;
+    width: 40%;
+    margin-left: 2%;
+}
+.table-side{
+    width: 38%;
+    border: lightcoral solid 2px;
+    margin-left: 60%;
+    margin-top: -5%;
+}
+.content-side{
+    background-color: lightcoral;
+}
+.content{
+    background-color: lavender;
+    padding: 30px;
+    width: 50%;
+    margin-left: 2%;
+    margin-top: -8%;
+    height: 1000px;
+}
+.codebox{
+    background-color: white;
+    color:rgb(0, 0, 0);
+    border:none;
+    padding:2%;
+}
+.table-side2{
+    width: 38%;
+    border: lightcoral solid 2px;
+    margin-left: 60%;
+    margin-top: -55%;
+}
