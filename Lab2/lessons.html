@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>specificity</title>
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(255, 209, 223);">
+    
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Lesson</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">CssZengardian</a></li>
+            <li><a href="6010405581.html">My best friends</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+          <h3 class = "head-content">การใช้งาน specificity</h3>
+    </div>
+    <div class="table-side">
+        <table class="highlight">
+            <thead>
+              <tr>
+                  <th>Selector</th>
+                  <th>HTML</th>
+                  <th>CSS</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                <td>Element</td>
+                <td>div or nav or others</td>
+                <td>div{} or nav{} or others</td>
+              </tr>
+              <tr>
+                <td>ID</td>
+                <td>id="id-name"</td>
+                <td>#id-name{}</td>
+              </tr>
+              <tr>
+                <td>CLASS</td>
+                <td>class="class-name"</td>
+                <td>.class-name{}</td>
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+    <div class="content">
+        Selector มีอยู่หลายแบบ การเลือกใช้งานจึงแตกต่างกัน
+        <br>
+    - Element Selector
+    ชื่อของ selector จะเป็นชื่อเดียวกับ Tag Name ของ html และจะมีผลกับทุก Element ที่มี Tag Name เดียวกับ Selector
+    <div class="codebox">
+        <textarea>
+    ------html------
+        <html>
+            <head></head>
+            <div>Hello</div>
+            <div>Goodbye</div>
+        </html>
+    ------css------
+    div{
+        color: red;
+    }</textarea><br> ผลลัพธ์ <br>
+    <img src="Capture.jpg" >
+    </div>
+    <br>
+    - ID Selector ใช้กำหนดรูปแบบเฉพาะ ตั้งชื่อได้ตามต้องการ แต่ห้ามนำหน้าด้วยตัวเลข และเว้นวรรคให้แทนด้วย -
+ ใช้ได้กับ element เดียว และ element นั้นจะต้องใช้ id ได้ id เดียวเท่านั้น 
+ <div class="codebox">
+     <textarea name="" id="" cols="30" rows="10">
+    ------html------
+        <html>
+            <head></head>
+            <div id="text-red">Hello</div>
+            <div>Goodbye</div>
+        </html>
+    ------css------
+    #text-red{
+        color: red;
+    }</textarea><br> ผลลัพธ์ <br>
+    <img src="Capture2.jpg" >
+    </div>
+    <br>
+    - CLASS Selector ใช้กำหนดรูปแบบเฉพาะ ตั้งชื่อได้ตามต้องการ แต่ห้ามนำหน้าด้วยตัวเลข และเว้นวรรคให้แทนด้วย -
+ ใช้ได้หลาย element และ element นั้นใช้ได้หลาย class 
+ <div class="codebox">
+     <textarea name="" id="" cols="30" rows="30">
+    ------html------
+        <html>
+            <div class="text-red center">Hello</div>
+            <div>Goodbye</div>
+        </html>
+    ------css------
+    .text-red{
+        color: red;
+    }
+    .center{
+        text-align: center;
+    }</textarea><br> ผลลัพธ์ <br>
+    <img src="Capture3.jpg" width="100%" height = "200px">
+    </div>
+    </div>
+    <div class="table-side2">
+        การใช้ CSS
+        <br> - ใช้ภายใน Element <br>
+        <img src="Capture4.jpg" >
+        <br> - ใช้ภายนอก Element แต่ในไฟล์ Html <br>
+        <img src="Capture5.jpg" >
+        <br> - ใช้ภายนอกไฟล์ Html <br>
+        <img src="Capture6.jpg" >
+    </div>
+    
+</body>
+</html>
