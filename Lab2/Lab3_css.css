@@ -1,0 +1,66 @@
+.center{
+    text-align: center;
+}
+#Input{
+    border: solid black 1px;
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    margin-left: 29%;
+}
+#count{
+    border: solid black 1px;
+    background-color: white;
+    width: 20%;
+    text-align: center;
+    margin-left: 39%;
+}
+#bg1{
+    background-color: rgb(240, 193, 255);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#bg2{
+    background-color: rgb(255, 193, 227);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#bg3{
+    background-color: rgb(255, 193, 201);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.pad{
+    padding: 2px;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+}
+#display_name{
+    border: solid rgb(149, 255, 158) 1px;
+    background-color: rgb(185, 255, 197);
+    width: 40%;
+    text-align: center;
+    margin-left: 29%;
+}
+#display_count{
+    border: solid rgb(149, 239, 255) 1px;
+    background-color: rgb(185, 241, 255);
+    width: 40%;
+    text-align: center;
+    margin-left: 29%;
+}
+#int_dis{
+    border: solid rgb(195, 149, 255) 1px;
+    background-color: rgb(247, 185, 255);
+    width: 30%;
+    text-align: center;
+    margin-left: 35%;
+}
+#name_dis{
+    border: solid rgb(239, 255, 149) 1px;
+    background-color: rgb(254, 255, 185);
+    width: 30%;
+    text-align: center;
+    margin-left: 35%;
+}

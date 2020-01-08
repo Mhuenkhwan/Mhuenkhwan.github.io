@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Lab3_css.css">
+    <link rel="stylesheet" href="materialize.css">
+    <title>Random</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Random</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="index.html">CssZengardian</a></li>
+              <li><a href="6010405581.html">My best friends</a></li>
+              <li><a href="lessons.html">Lesson</a></li>
+            </ul>
+          </div>
+    </nav>
+    <div id="bg1">
+        <h2 class="center pad">ลงทะเบียนผู้ร่วมงาน</h2><br>
+        <input type="text" id="Input">
+        <script>
+            var party = [];
+            var name_ran = [];
+            var int_ran = [];
+            function myFunction() {
+              var name = document.getElementById("Input").value;
+              if(name == ""){
+              var dis = "ยังไม่ได้ลงทะเบียน";
+              }
+              else{
+                party.push(name);
+                var dis = "ลงทะเบียนสำเร็จ ยินดีต้อนรับ คุณ " + name;
+              }
+              return dis;
+            }
+            function closeEvent(){
+                return "ปิดการลงทะเบียน";
+            }function forRandom() {
+              var n = document.getElementById("count").value;
+              return n;
+            }
+
+            function getRandomInt() {
+            max = forRandom();
+            n = Math.floor(Math.random() * Math.floor(max));
+            if(count > 0 && int_ran.indexOf(n) == -1){
+                int_ran.push(n);
+                var ans = n;
+                count--;
+            }
+            else if(count > 0 && int_ran.indexOf(n) != -1){
+                var ans = "รางวัลได้ถูกจับไปแล้ว กรุณาสุ่มใหม่"
+            }
+            return ans
+            }
+            function getRandomName() {
+                var n = Math.floor(Math.random()*party.length);
+            if(count > 0 && name_ran.indexOf(party[n]) == -1){
+                name_ran.push(party[n]);
+                var ans = party[n];
+                count--;
+            }
+            else if(count > 0 && name_ran.indexOf(party[n]) != -1){
+                var ans = "ผู้เข้าร่วมได้ถูกสุ่มไปแล้ว กรุณาสุ่มใหม่"
+            }
+            return ans
+            }
+        </script>
+        <button type="button" style="margin-left: 46%;"
+       onclick="document.getElementById('display_name').innerHTML = myFunction()">
+       ลงทะเบียน.</button>
+       <button type="button" style="margin-left: 46%;"
+       onclick="document.getElementById('display_name').innerHTML = closeEvent()">
+       ปิดลงทะเบียน.</button>
+       <p id="display_name"></p>
+    </div>
+        
+    <div id="bg2">
+        <h3 class="center pad">กำหนดจำนวนของรางวัล</h2><br>
+        <input type="text" id="count" oninput="forRandom()">
+        <button type="button" style="margin-left: 47%;"
+        onclick="document.getElementById('display_count').innerHTML = forRandom()">
+        ตกลง.</button>
+        <p id="display_count"></p></div>
+    <div id="bg3">
+        <h3 class="center pad">สุ่มจับรางวัล</h2><br>
+            <button type="button" style="margin-left: 46%;"
+       onclick="document.getElementById('name_dis').innerHTML = getRandomName()">
+       สุ่มชื่อ.</button>
+       <button type="button" style="margin-left: 46%;"
+       onclick="document.getElementById('int_dis').innerHTML = getRandomInt()">
+       สุ่มรางวัล.</button>
+       <p class="center">ชื่อ: </p><p id="name_dis"></p>
+       <p class="center">เลขรางวัล: </p><p id="int_dis"></p>
+    
+    </div>
+</body>
+</html>
